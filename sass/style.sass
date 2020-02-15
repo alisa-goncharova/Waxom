@@ -1,0 +1,115 @@
+html,body 
+	position: relative
+	height: 100%
+body
+	background: #eee
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+	font-size: 14px
+	color:#000
+	margin: 0
+	padding: 0
+header
+	background-image: url("../img/header/overlay.png")
+	background-image: no-repeat
+	background-position: center
+.menu 
+		display: flex
+		padding-top: 3%
+		position: relative
+		p
+			width: 73px
+			height: 29px
+			background-image: linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%)
+			background-clip: text
+			color: #ffffff
+			font-family: "Roboto - Thin"
+			font-size: 30px
+			margin: 0
+			// background: yellow
+			position: absolute
+			top: 44%
+			left: 15%
+			margin-right: -50%
+			transform: translate(-50%, -50%)
+.menu-container ul 
+	list-style: none
+	margin: 0
+	padding-left: 0
+	display: flex
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-right: -50%
+	transform: translate(-50%, -50%)
+	li 
+		padding-left: 30px
+		a 
+			text-align: center
+			text-decoration: none
+			color: #ffffff
+			font-family: "Roboto - Black"
+			font-size: 13px
+			font-weight: 400
+			text-transform: uppercase
+			letter-spacing: 0.33px
+			&:hover 
+				color: #00e0d0
+				transition: 0.8s
+
+.swiper
+	max-width:  1920px 
+	margin: 0 auto
+	overflow: hidden
+	&-container 
+		height: 100%
+		width: 100%
+
+	&-slide 
+		padding-bottom: 20%
+		text-align: center
+		font-size: 18px
+		display: -webkit-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		-webkit-justify-content: center
+		justify-content: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		-webkit-align-items: center
+		align-items: center
+	&-pagination-bullet
+		background: none
+		border: 1px  #c2c2c2 solid
+		opacity: 1
+		&-active
+			background: #00e0d0
+			border: 1px #00e0d0 solid
+.top-title
+	p
+		color: #ffffff
+		font-family: "Playfair Display - Black"
+		font-size: 32px
+		font-weight: 400
+		letter-spacing: 0.32px
+.top-content
+	padding-bottom: 1%
+	p
+		color: #ffffff
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 300
+		line-height: 24px
+		letter-spacing: 0.7px
+.top-button
+		border: 1px solid #00e0d0
+		p 
+			color: #00e0d0
+			font-family: "Hammersmith One"
+			font-size: 16px
+			font-weight: 400
+			text-transform: uppercase
+
+	    
