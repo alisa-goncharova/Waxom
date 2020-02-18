@@ -10,42 +10,30 @@ body
 	padding: 0
 header
 	background-image: url("../img/header/overlay.png")
+	background-color: rgb(45,39,75)
 	background-image: no-repeat
 	background-position: center
+.wrapper
+	max-width: 1600px
+	margin: 0 auto
+	//контейнер 960
+	// margin-rihgt 10 
+	// margin-left: 10
 .menu 
 		display: flex
-		//padding-top: 3%
-		// padding-top: 35px
-		padding: 35px
+		padding-left: 0px 
 		position: relative
-		//p
-		// 	// width: 73px
-		// 	// height: 29px
-		// 	// background-image: linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%)
-		// 	// background-clip: text
-			// color: #ffffff
-			// font-family: "Roboto - Thin"
-			// font-size: 30px
-		// 	margin: 0
-		// 	// background: yellow
-		// 	position: absolute
-		// 	top: 44%
-		// 	left: 15%
-		// 	margin-right: -50%
-			// transform: translate(-50%, -50%)
 .menu-logo 
 	display: flex
-	justify-content: center
-	align-items: center
+	padding-left: 50px
+
+
 	p
 		font-family: '"Roboto - Thin"', sans-serif
 		font-size: 30px
 		background: linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%)
 		-webkit-background-clip: text
 		-webkit-text-fill-color: transparent
-		// color: #0B2349
-		// // display: table
-		// margin: 20px auto
 		
 .menu-container ul 
 	list-style: none
@@ -71,7 +59,9 @@ header
 			&:hover 
 				color: #00e0d0
 				transition: 0.8s
-
+.container
+	max-width: 960px
+	margin: 0 auto
 .swiper
 	max-width:  1920px 
 	margin: 0 auto
@@ -81,6 +71,7 @@ header
 		width: 100%
 
 	&-slide 
+		padding-top: 52px
 		padding-bottom: 20%
 		text-align: center
 		font-size: 18px
@@ -127,5 +118,45 @@ header
 			font-size: 16px
 			font-weight: 400
 			text-transform: uppercase
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+	bottom: 38px
 
-	    
+
+// $retina-dpi: 144dpi;
+// $retina-dppx: 1.5dppx;
+
+// $columns: 12;
+// $offset: 30px;
+// $offset_one_side: ($offset / 2);
+
+// @mixin size_one($n) {
+//     $val: 100% / $columns * $n;
+//     width: calc(#{$val} - #{$offset});
+// }
+
+// @mixin size($n) {
+//     $val: 100% / $columns * $n;
+//     width: calc(#{$val} - #{$offset});
+//     margin-right: $offset_one_side;
+//     margin-left: $offset_one_side;
+// }
+
+// @mixin shift-left($n) {
+//     $val: 100% / $columns * $n;
+//     margin-left: #{calc(#{$val} + #{$offset_one_side})};
+// }
+
+// @mixin shift-right($n) {
+//     $val: 100% / $columns * $n;
+//     margin-right: #{calc(#{$val} + #{$offset_one_side})};
+// }
+
+// @mixin shift($n) {
+//     $val: 100% / $columns * $n;
+//     margin-left: #{calc(#{$val} + #{$offset_one_side})};
+//     margin-right: #{calc(#{$val} + #{$offset_one_side})};
+// }
+
+//  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+//         @include sprite($dash-right-2x);
+//     }
