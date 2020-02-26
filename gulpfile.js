@@ -1,6 +1,8 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass        = require('gulp-sass');
+const tmp = 0; // переменная для удаленная при следующем коммите
+
 
 function style() {
 	return gulp.src('./src/sass/style.sass')
