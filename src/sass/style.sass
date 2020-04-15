@@ -59,38 +59,98 @@ header
 				color: #00e0d0
 				transition: 0.8s
 // КНОПКА ЗДЕСЬ
-// .section-btn
-// 	height: 100vh
-// 	background-color: #00e0d0
-// 	display: flex
-// 	justify-content: center
-// 	align-items: center
-// 	position: relative
-// .menu-btn	
-// 	display: block
-// 	width: 50px
-// 	height: 50px 
-// 	background-color: #fff
-// 	border-radius: 50%
-// 	span
-// 		position: absolute
-// 		top: 50% 
-// 		margin-top: -1px
-// 		left: 50%
-// 		margin-left: -10px
-// 		width: 20px
-// 		height: 2px
-// 		background-color: #222
-// .menu-btn span::before
-// 	content: ''
-// 	transform: translateY(-5px)
-// 	width: 50px
-// 	height: 50px 
-// .menu-btn span::after
-// 	content: ''
-// 	transform: translateY(5px)
-// 	width: 50px
-// 	height: 50px 
+// начало адаптивного меню
+.section 
+	//height: 100vh
+	//background-color: #7b1fa2
+	display: flex
+	justify-content: center
+	align-items: center
+
+.menu-btn 
+	display: block
+	width: 50px
+	height: 50px
+	background-color: #fff
+	border-radius: 50%
+	position: relative
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after 
+	position: absolute
+	top: 50% 
+	margin-top: -1px
+	left: 50%
+	margin-left: -10px
+	width: 20px
+	height: 2px
+	background-color: #222
+
+.menu-btn span::before,
+.menu-btn span::after 
+	content: ''
+	display: block
+	transition: 0.2s
+
+.menu-btn span::before 
+	transform: translateY(-5px)
+
+.menu-btn span::after 
+	transform: translateY(5px)
+
+.menu-btn_active span:before 
+	transform: rotate(-35deg)
+	width: 10px
+	transform-origin: left bottom
+
+.menu-btn_active span:after 
+	transform: rotate(35deg)
+	width: 10px
+	transform-origin: left top
+
+.menu-block 
+	position: absolute
+	top: 0
+	right: 0
+	padding-top: 25px
+	padding-right: 15px
+	display: flex
+	justify-content: center
+	align-items: center
+
+.menu-nav a 
+	text-decoration: none
+	font-family: "Roboto", sans-serif
+	font-weight: 700
+	color: #222
+	text-transform: uppercase
+	display: inline-block
+	margin-right: 12px
+	transition: 1s
+	font-family: 13px
+
+.menu-nav 
+	transition: 0.2s
+	transform: scaleX(0) translateX(0%)
+	transform-origin: right center
+	opacity: 0
+	visibility: hidden
+	height: 50px
+	line-height: 50px
+	background-color: #fff
+	padding-right: 25px
+	padding-left: 25px
+	margin-right: -25px
+	border-top-left-radius: 50px
+	border-bottom-left-radius: 50px
+
+.menu-nav_active 
+	transform: scaleX(1) translateX(0%)
+	opacity: 1
+	visibility: visible
+
+// конец адаптивного меню 
 .container
 	max-width: 960px
 	margin: 0 auto
@@ -158,8 +218,11 @@ header
 		display: flex
 		justify-content: center
 		margin: auto
-		& :hover 
-			background-color: #00e0d0
+		&:hover 
+			// z-index: 1
+			// // background-color: #00e0d0
+			// opacity: 0.5
+			// // color: #fff
 		p
 			color: #00e0d0
 			font-family: 'Hammersmith One', sans-serif
