@@ -58,11 +58,18 @@ header
 			&:hover 
 				color: #00e0d0
 				transition: 0.8s
+.cart-link
+	transform: translateY(-10px)
+	a
+		span
+			svg
+				width: 30px
+				&:hover
+					fill: #00e0d0
+					transition: 0.8s
 // КНОПКА ЗДЕСЬ
 // начало адаптивного меню
 .section 
-	//height: 100vh
-	//background-color: #7b1fa2
 	display: flex
 	justify-content: center
 	align-items: center
@@ -130,6 +137,9 @@ header
 	transition: 1s
 	font-family: 13px
 
+.menu-nav a:hover
+	color:#00e0d0
+	//transition: 0.5s
 .menu-nav 
 	transition: 0.2s
 	transform: scaleX(0) translateX(0%)
@@ -149,8 +159,19 @@ header
 	transform: scaleX(1) translateX(0%)
 	opacity: 1
 	visibility: visible
-
-// конец адаптивного меню 
+.cart-link-responcive
+	width: 35px
+	display: block
+	margin-left: auto
+	margin-right: auto
+	transform: translateY(-52px)
+a
+span
+	svg
+		width: 30px
+		&:hover
+			fill: #00e0d0
+			transition: 0.8s
 .container
 	max-width: 960px
 	margin: 0 auto
@@ -223,14 +244,16 @@ header
 			// // background-color: #00e0d0
 			// opacity: 0.5
 			// // color: #fff
+			border: 1px solid #4aa3cc
+			opacity:0.8
+			transition: 0.3s
 		p
 			color: #00e0d0
 			font-family: 'Hammersmith One', sans-serif
 			font-size: 14px
 			font-weight: 400
 			text-transform: uppercase
-		& :hover 
-			color: #fff
+
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
 	bottom: 38px
 
@@ -262,17 +285,7 @@ header
 				line-height: 22px
 				letter-spacing: 0.42px
 	&-button 
-		margin-top: 30px
-		p
-			text-align: center
-			width: 120px
-			padding: 10px
-			color: #00e0d0
-			// font-family: "Hammersmith One"
-			font-size: 16px
-			font-weight: 400
-			text-transform: uppercase
-			border: 1px solid #00e0d0
+		margin: 0
 .team 
 	display: none
 // 	background-image: url("../img/team/background-team.png")
