@@ -2,7 +2,7 @@ html,body
 	position: relative
 	height: 100%
 body
-	background: #eee
+	background: #fff
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif
 	font-size: 14px
 	font-size: 80%
@@ -19,6 +19,20 @@ header
 	//контейнер 960
 	// margin-right: 10px 
 	// margin-left: 10px
+.container, .about 
+	max-width: 1290px
+	margin-top: 0
+	margin-bottom: 0
+	margin-right: auto
+	margin-left: auto 
+	padding-left: 30px
+	padding-right: 30px
+.row
+	display: flex
+	flex-wrap: wrap 
+	margin-right: -30px
+	margin-left: -30px
+	align-items: center
 .menu 
 		display: flex
 		padding-left: 0px 
@@ -262,6 +276,7 @@ span
 	bottom: 38px
 
 .about
+	background-color: #fff
 	padding-top: 50px
 	display: flex
 	align-items: center
@@ -275,64 +290,96 @@ span
 		&-title
 			p
 				color: #413d4b
-				// font-family: "Playfair Display"
+				font-family: "Playfair Display"
 				font-size: 22px
 				font-weight: 700
 				letter-spacing: 1.1px
 		&-items
 			p
 				opacity: 0.75
-				color: #413d4b
-				// font-family: Roboto
+				color: #716e78
+				font-family: "Roboto", sans-serif
 				font-size: 14px
 				font-weight: 300
 				line-height: 22px
 				letter-spacing: 0.42px
 	&-button 
-		margin: 0
-.team 
-	display: none
-// 	background-image: url("../img/team/background-team.png")
-// 	background-color: rgb(45,39,75)
-// 	background-position: center
-// 	color: #fff
-// 	&-title
-// 	padding-top: 65px
-// 	p
-// 	text-align: center
-// 	&-items
-// 	p
-// 		text-align: center
-// 	&-content
-// 		display: flex
-// 		align-items: center
-// 		justify-content: center
-// 		&-items
-// 			width: 240px
-// 			height: 325px
-// 			border-bottom: 1px solid #fff
-// 			margin-left: 5px
-// .team-title-head
-// 	// p
-// 	// 	font-size: 34px
-// 	// 	font-family: "Playfair Display - Black"
-// 	// 	color: #fff
-// 	width: 312px
-// 	height: 16px
-// 	opacity: -1
-// 	color: #ffffff
-// 	// font-family: "Playfair Display"
-// 	font-size: 22px
-// 	font-weight: 700
-// 	text-transform: uppercase
-// 	/* Text style for "MEET OUR A" */
-// 	letter-spacing: 1.1px
-// .team-button
-// 	padding-top: 70px
+		margin: 0 
+.team
+	background-image: url("../img/team/background-team.png")
+	background-repeat: no-repeat  
+	text-align: center
+	background-size: cover
+	padding-top: 60px
+	padding-bottom: 60px
+	&-top
+		margin-bottom: 40px
+		&__title
+			padding-bottom: 15px
+			p 
+				font-family: 'Playfair Display', serif
+				color: #fff
+				font-size: 22px
+				text-transform: uppercase
+		&__subtitle 
+			p 
+				font-family: 'Playfair Display'
+				font-weight: 400
+				font-size: 14px
+				line-height: 19px
+				color: #edecef
+	&-middle
+		display: flex
+		flex-wrap: wrap 
+		align-items: center
+		justify-content: center
+		&__items 
+			margin-left: 20px
+			margin-top: 20px
+			border: 1px solid #7d739e
+	&-bottom
+		&__title
+			margin-top: 65px
+			p 
+				font-family: Roboto
+				font-style: normal
+				font-weight: 300
+				font-size: 14px
+				color: #F3F3F3
+		&__btn 
+			margin-top: 25px
+			align-items: center
+.team p 
+	padding: 0
+	margin: 0
+.team-top::after 
+	content: ""
+	position: absolute
+	background-color: #7d739e
+	width: 50px
+	height: 1px
+	transform: translateX(-50%) translateY(20px)
+	// top: 27%
 
-
-
-
+.items
+	&-title
+		padding-top: 20px 
+		p 
+			color: #f4f4f6
+			text-transform: uppercase
+			font-family: 'Roboto'
+			font-weight: 900
+	&-subtitle
+		padding-bottom: 25px
+		padding-top: 10px
+		p 
+			color: #7d739e
+			text-transform: uppercase
+			font-family: 'Roboto'
+			font-weight: 300
+	&-image
+		img 
+		// width: 100px
 
 
 
