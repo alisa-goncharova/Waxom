@@ -19,7 +19,7 @@ header
 	//контейнер 960
 	// margin-right: 10px 
 	// margin-left: 10px
-.container, .about 
+.container, .about, .how-it-works
 	max-width: 1290px
 	margin-top: 0
 	margin-bottom: 0
@@ -334,7 +334,7 @@ span
 		align-items: center
 		justify-content: center
 		&__items 
-			margin-left: 20px
+			margin-right: 20px
 			margin-top: 20px
 			border: 1px solid #7d739e
 	&-bottom
@@ -377,10 +377,74 @@ span
 			text-transform: uppercase
 			font-family: 'Roboto'
 			font-weight: 300
-	&-image
-		img 
-		// width: 100px
 
+.how-it-works 
+	background-color: #fff
+	padding-top: 80px
+	padding-bottom: 80px
+	p 
+		margin: 0
+		padding: 0
+.works
+	&-top
+		&-title 
+			padding-bottom: 60px
+			text-align: center
+			p 
+				font-family: "Playfair Display"
+				font-size: 22px
+				font-weight: 700
+				letter-spacing: 1.1px
+				text-transform: uppercase
+	&-steps 
+		display: block
+		&__item
+			position: relative
+			display: block
+			vertical-align: top
+			overflow: visible 
+			margin-bottom: 20px
+			&-line 
+				position: absolute
+				width: 2px
+				height: 100%
+				padding: 12px 0 0
+				left: 32px 
+				transform: translateY(51px)
+				&::after 
+					content: ""
+					display: inline-block
+					background-color: #52c3c0
+					width: 2px
+					height: 99%
+					border-radius: 1px
+			&-icon 
+				width: 60px 
+				height: 60px
+				border-radius: 31px
+				border: 2px solid #52c3c0
+				background-color: #fff
+				float: left 
+
+				text-align: center
+				margin-right:40px
+				box-shadow: 0 5px 9px 0 rgba(0,0,0,.2)
+				span 
+					position: relative
+					font-size: 20px
+					top: 20px
+					color: black
+			&-content 
+				overflow: hidden
+				p 
+					font-size: 25px
+					padding-bottom: 25px
+				&-title 
+					p 
+						font-family: "Roboto", sans-serif
+						font-size: 15px
+						font-weight: 300
+						color: #716e78
 
 
 
