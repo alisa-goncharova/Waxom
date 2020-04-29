@@ -11,6 +11,7 @@ body
 	padding: 0
 header
 	background-image: url("../img/header/overlay.png")
+	background-size: cover
 	background-color: rgb(45,39,75)
 	background-position: center
 .wrapper
@@ -19,7 +20,7 @@ header
 	//контейнер 960
 	// margin-right: 10px 
 	// margin-left: 10px
-.container, .about, .how-it-works
+.container, .about, .how-it-works, .footer-block
 	max-width: 1290px
 	margin-top: 0
 	margin-bottom: 0
@@ -397,7 +398,10 @@ span
 				letter-spacing: 1.1px
 				text-transform: uppercase
 	&-steps 
-		display: block
+		// display: block
+		display: flex 
+		flex-direction: column 
+		align-items: center
 		&__item
 			position: relative
 			display: block
@@ -436,6 +440,8 @@ span
 					color: black
 			&-content 
 				overflow: hidden
+				min-height: 48px
+				max-width: 520px
 				p 
 					font-size: 25px
 					padding-bottom: 25px
@@ -445,6 +451,100 @@ span
 						font-size: 15px
 						font-weight: 300
 						color: #716e78
+footer 
+	background-color: #30235f
+	background-image: url('../img/footer/footer-background.png')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+.footer
+	&-block
+		padding-top: 70px
+		padding-bottom: 70px
+		p 
+			margin: 0 
+			padding: 0 
+			color: #fff
+	&-content
+		display: flex
+		flex-wrap: wrap 
+		justify-content: center
+		// align-items: center
+		&__item 
+			padding-right: 35px 
+			&-logo 
+				display: flex
+				align-items: center
+				padding-bottom: 25px
+				img
+					width: 45px
+					position: absolute
+				p
+					padding-left: 45px  
+					font-family: 'Roboto', sans-serif
+					font-size: 25px
+					background: linear-gradient(to right, #00e0d0 0%, #4aa3cc 100%)
+					-webkit-background-clip: text
+					-webkit-text-fill-color: transparent
+			&-descriotion
+				p 
+					font-family: 'Roboto'
+					font-style: normal
+					font-weight: 300
+					font-size: 14px
+					line-height: 26px
+			&-title 
+				display: flex
+				align-items: center
+				padding-bottom: 25px
+				p 
+					font-family: Roboto
+					font-style: normal
+					font-weight: 900
+					font-size: 15px
+					line-height: 26px
+					text-transform: uppercase
+			&-strit 
+				display: flex
+				padding-bottom: 25px
+				align-items: flex-start
+				img 
+					width: 20px
+					padding-right: 15px
+				p 
+					font-family: Roboto
+					font-style: normal
+					font-weight: 300
+					font-size: 14px
+					line-height: 26px
+			&-number 
+				display: flex 
+				img 
+					width: 20px 
+					padding-right: 15px 
+				p 
+					font-family: Roboto
+					font-style: normal
+					font-weight: 300
+					font-size: 14px
+					line-height: 26px
+			&-icon 
+				text-align: center
+				display: flex
+				flex-wrap: wrap
+				&-instance
+					border: 1px solid #fff
+					border-radius: 71px
+					height: 35px
+					width: 35px
+					margin-right: 10px
+					a
+						img
+							width: 20px
+							position: relative
+							top: 7px
+
+
 
 
 
