@@ -20,7 +20,7 @@ header
 	//контейнер 960
 	// margin-right: 10px 
 	// margin-left: 10px
-.container, .about, .how-it-works, .footer-block
+.container, .about, .how-it-works, .footer-block, .reviews, .contact
 	max-width: 1290px
 	margin-top: 0
 	margin-bottom: 0
@@ -452,6 +452,99 @@ span
 						font-size: 15px
 						font-weight: 300
 						color: #716e78
+.reviews
+	padding-top: 130px
+	padding-bottom: 130px
+	background-image: url('../img/reviews/reviews-backgroud.png')
+	background-repeat: no-repeat 
+	background-size: cover 
+	background-position: center
+	&-content 
+		text-align: center
+		&__top
+			display: inline-block
+			p 
+			font-family: "Playfair Display"
+			font-size: 100px
+			color: #fff
+			line-height: 22px
+		&__title
+			padding-bottom: 40px 
+			p 
+			color:#fff
+			font-size: 16px
+			font-family: "Playfair Display"
+			font-height: 26px
+		&__subtitle 
+			padding-bottom: 10px
+			p 
+			font-family: "Roboto"
+			font-size: 14px
+			color: #fff
+			font-weight: 900
+			text-transform: uppercase
+		&__bottom 
+			color: #7d739e
+			font-family: "Roboto"
+			font-size: 13px
+			font-weight: 300
+			text-transform: uppercase
+.reviews p 
+	padding: 0
+	margin: 0
+.contact p, form
+	padding: 0 
+	margin: 0
+.contact
+	padding-top: 70px
+	padding-bottom: 70px
+	text-align: center
+	&-title
+		padding-bottom: 60px 
+		p
+		font-size: 22px
+		font-family: "Playfair Display"
+		font-weight: 900
+		color: #5a5763
+		text-transform: uppercase
+	&-forms
+		max-width: 500px
+		max-height: 462px
+		margin-right: auto
+		margin-left: auto
+		form
+			display: flex 
+			flex-direction: column
+			border-radius: 0
+		input 
+			margin-bottom: 20px
+			padding-top: 15px
+			padding-bottom: 15px
+			border-radius: 1px solid #e5e5e5
+			&::placeholder 
+				color: #b3b1b7
+				padding-left: 20px
+				padding-top: 20px
+				font-family: "Roboto"
+				font-size: 14px 
+		textarea
+			margin-bottom: 20px
+			border-radius: 1px solid #e5e5e5
+			&::placeholder 
+				color: #b3b1b7
+				padding-left: 20px
+				padding-top: 20px
+				font-family: "Roboto"
+				font-size: 14px 
+	&-btn 
+		input
+			border: 1px solid #00e0d0 
+			background-color: #fff
+			color: #00e0d0
+			max-width: 120px
+			padding-left: 35px
+			padding-right: 35px
+			text-transform: uppercase
 footer 
 	background-color: #30235f
 	background-image: url('../img/footer/footer-background.png')

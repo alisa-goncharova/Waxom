@@ -9,7 +9,6 @@
 <meta name="description" content="Агентство интернет-маркетинга и интернет-рекламы ConvertMonster: создание Landing Page, настройка контекстной рекламы, SEO-анализ, эффективный email-маркетинг." /> -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
-<!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&display=swap" rel="stylesheet"> -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
@@ -31,10 +30,10 @@
   	 				<li><a href="#home">Home</a></li>
   	 				<li><a href="#about">About</a></li>
   	 				<!-- <li><a href="#">Expertise</a></li> -->
-  	 				<li><a href="#">Teams</a></li>
-  	 				<li><a href="#">How it Works?</a></li>
-  	 				<li><a href="#">Shop</a></li>
-  	 				<li><a href="#">Contact</a></li>
+  	 				<li><a href="#teams">Teams</a></li>
+  	 				<li><a href="#how-it-works">How it Works?</a></li>
+  	 				<!-- <li><a href="#">Shop</a></li> -->
+  	 				<li><a href="#contact">Contact</a></li>
             <li class="cart-link">
                 <a href="#">
                   <span>
@@ -68,10 +67,10 @@
         <a href="#home">HOME</a>
         <a href="#about">ABOUT</a>
        <!--  <a href="#">EXPERTISE</a> -->
-        <a href="#">TEAMS</a>
-        <a href="#">HOW IT WORKS?</a>
-        <a href="#">SHOP</a>
-        <a href="#">CONTACT</a>
+        <a href="#teams">TEAMS</a>
+        <a href="#how-it-works">HOW IT WORKS?</a>
+        <!-- <a href="#">SHOP</a> -->
+        <a href="#contact">CONTACT</a>
         <!-- <a href="#" class="none">Корзина</a> -->
       </nav>
       <a href="#" class="menu-btn">
@@ -151,22 +150,7 @@
         <p>Order Website</p>
       </div>
     </div>
-    </div>
-      <!-- <div class="swiper-slide">
-        <div>
-          <div class="top-title">
-            <p>We Are Awesome Creative Agency</p>
-          </div>
-          <div class="top-content">
-            <p>This Photochop's of Lorem ipsum. Proin gravida nibh vel velit auctor allquent. Aenean sollicitudin, lorem <br>
-            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh<br>
-            vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-          </div>
-          <div class="top-button">
-            <p>Learn More</p>
-          </div>
-        </div>
-      </div> -->    
+    </div>   
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"> </div>
@@ -198,7 +182,7 @@
   </div>
 </div>
   
-<div class="team">
+<div class="team" id="teams">
     <div class="team-top">
           <div class="team-top__title">
               <p>Meet Our Amazing Team</p>
@@ -272,7 +256,7 @@
     </div>
 </div>
 
-<section class="how-it-works">
+<section class="how-it-works" id="how-it-works">
   <div class="works-top">
       <div class="works-top-title">
           <p>How it Works?</p>
@@ -342,8 +326,45 @@
   </div>
 </section>
 
+  <div class="reviews">
+    <div class="reviews-content">
+      <div class="reviews-content__top">
+        <p>“</p>
+      </div>
+      <div class="reviews-content__title">
+        <p>In development, I use the most modern technologies to provide you the highest quality result.<br>
+         After launch, I guarantee you 30-day support and a refund in case of dissatisfaction with the work done.</p>
+      </div>
+      <div class="reviews-content__subtitle">
+        <p>Alice Goncharova</p>
+      </div>
+        <div class="reviews-content__bottom">
+          <p>Front-end Developer</p>
+        </div>
+    </div>
+  </div>
+
+
+<div class="contact" id ="contact">
+  <div class="contact-title">
+    <p>Contact</p>
+  </div>
+  <div class="contact-forms">
+    <form action="">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <input type="text"  placeholder="Subject">
+      <textarea name="" id="" cols="30" rows="10" placeholder="Your Messages"></textarea>
+      <div class="contact-btn">
+        <input type="submit" value="submit">
+      </div>
+    </form>
+  </div>
+</div>
+
+
 <footer>
-    <div class="footer-block">
+    <div class="footer-block" id="contact">
         <div class="footer-content">
             <div class="footer-content__item">
                 <div class="footer-content__item-logo">
@@ -381,29 +402,35 @@
                     <p>Stay in Touch</p>
               </div>
               <div class="footer-content__item-icon">
-                
+
                 <div class="footer-content__item-icon-instance">
+                 <a href="https://vk.com/id491770106" target="_blank">
+                    <img src="img/footer/vk.svg" alt="">
+                </a>
+                </div>
+
+                <div class="footer-content__item-icon-instance">
+                 <a href = "https://www.instagram.com/alice_frontend/" target="_blank">
+                    <img src="img/footer/instagram.svg" alt="">
+                </a>
+                </div>
+
+                <div class="footer-content__item-icon-instance">
+                 <a href="https://telegram.im/@q_qq_q" target="_blank">
+                    <img src="img/footer/telegram.svg" alt="">
+                  </a>
+                </div>
+
+                <div class="footer-content__item-icon-instance">
+                 <a><img src="img/footer/youtube.svg" alt=""></a>
+                </div>
+
+                 <div class="footer-content__item-icon-instance">
                  <a><img src="img/footer/facebook.svg" alt=""></a>
                 </div>
 
                 <div class="footer-content__item-icon-instance">
                  <a><img src="img/footer/twitter.svg" alt=""></a>
-                </div>
-
-                <div class="footer-content__item-icon-instance">
-                 <a><img src="img/footer/vk.svg" alt=""></a>
-                </div>
-
-                <div class="footer-content__item-icon-instance">
-                 <a><img src="img/footer/instagram.svg" alt=""></a>
-                </div>
-
-                <div class="footer-content__item-icon-instance">
-                 <a><img src="img/footer/telegram.svg" alt=""></a>
-                </div>
-
-                <div class="footer-content__item-icon-instance">
-                 <a><img src="img/footer/youtube.svg" alt=""></a>
                 </div>
 
 
