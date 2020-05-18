@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="css/swiper.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href = "css/responsive.css">
+<!-- <link rel="stylesheet" href="php/send.php"> -->
 	<title>Waxom</title>
 </head>
 <body>
@@ -351,11 +352,11 @@
       <p>Contact</p>
     </div>
     <div class="contact-forms">
-      <form action="">
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <input type="text"  placeholder="Subject">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Messages"></textarea>
+      <form action="php/send.php">
+        <input type="text" name ="name" placeholder="Name" required>
+        <input type="email" name ="email" placeholder="Email" required>
+        <input type="text"  name ="subject"placeholder="Subject" required>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Messages" required></textarea>
         <div class="contact-btn">
           <input type="submit" value="submit">
         </div>
