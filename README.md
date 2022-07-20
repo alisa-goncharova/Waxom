@@ -1,2 +1,3 @@
 # Waxom
-creating new website
+Первый самостоятельный проект
+верстка (адаптив) + библиотека swiper.slider + js
